@@ -12,11 +12,11 @@ def validate_url(value):
     try:
         url_validator(new_value)
     except:
-        raise ValidationError("Invalid URL for this field")
+        raise ValidationError("您输入的url不合法，请重新输入！")
     return new_value
 
 
 def validate_dot_com(value):
-    if not "com" in value:
-        raise ValidationError("This is not valid because of no .com")
+    if not ".com" in value:
+        raise ValidationError("请出入包含.com的url")
     return value

@@ -6,12 +6,12 @@
 
 {% block content %}
 <div class=''>
-    <h1>Exists Already</h1>
-    <p>{{ object.url }}</p>
+    <h1>成功获得简短的url</h1>
+    <p>您想访问的链接为 {{ object.url }}</p>
     {% if object.clickevent.count %} 
         <p>Count: {{ object.clickevent.count }}</p> 
     {% endif %}
-    <p><a class='btn btn-link'  href='{{ object.get_short_url }}'>{{ object.get_short_url }}</a></p>
+    <p>短链接请点击 <a class='btn btn-link'  href='{{ object.get_short_url }}'>{{ object.get_short_url }}</a></p>
     <a class='btn btn-default' href='/'>再来一次</a>
 </div>
 {% endblock content %}

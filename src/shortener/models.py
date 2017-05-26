@@ -63,7 +63,7 @@ class KirrURL(models.Model):
         return smart_text(self.url)
 
     def get_short_url(self):
-        url_path = reverse("scode", kwargs={'shortcode': self.shortcode}, host='www', scheme='http')
+        url_path = reverse("scode", kwargs={'shortcode': self.shortcode}, host='url', scheme='http')
         return url_path
 
 

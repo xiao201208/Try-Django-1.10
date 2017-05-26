@@ -30,7 +30,7 @@ class HomeView(View):
     def post(self, request, *args, **kwargs):
         form = SubmitUrlForm(request.POST)
         context = {
-            "title": "简短url",
+            "title": "缩短url",
             "form": form
         }
         template = "shortener/home.html"
