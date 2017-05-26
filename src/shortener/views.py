@@ -1,3 +1,4 @@
+# _*_ coding:utf-8 _*_
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render, get_object_or_404
 from django.views import View
@@ -18,18 +19,18 @@ def home_view_fbv(request, *args, **kwargs):
 class HomeView(View):
     def get(self, request, *args, **kwargs):
         the_form = SubmitUrlForm()
-        bg_image = 'https://upload.wikimedia.org/wikipedia/commons/0/05/20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg'
+        bg_image = ''
         context = {
-            "title": "Kirr.co",
+            "title": "缩短url",
             "form": the_form,
             "bg_image": bg_image
         }
-        return render(request, "shortener/home.html", context) # Try Django 1.8 & 1.9 http://joincfe.com/youtube
+        return render(request, "shortener/home.html", context) 
 
     def post(self, request, *args, **kwargs):
         form = SubmitUrlForm(request.POST)
         context = {
-            "title": "Kirr.co",
+            "title": "简短url",
             "form": form
         }
         template = "shortener/home.html"

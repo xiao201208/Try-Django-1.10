@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fh%ph!883s-^crxd_m#5m+$unko3*j1-emf@8=^!fb&9$%a!#!'
+SECRET_KEY = 'kd+(nl$9k)(=utua3frv*d@qyf@*8ki6*xe=lcb&r$@(6sugxc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tirr.com', 'www.tirr.com', 'www.kirr.co', 'kirr.co']
+ALLOWED_HOSTS = ['url.xiaogege.top',]
 
 
 # Application definition
@@ -60,9 +60,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'kirr.urls'
 ROOT_HOSTCONF = 'kirr.hosts'
-DEFAULT_HOST = 'www'
-DEFAULT_REDIRECT_URL = "http://www.tirr.com:8000" #kirr.co
-PARENT_HOST = "tirr.com:8000"
+DEFAULT_HOST = 'url'
+DEFAULT_REDIRECT_URL = "http://url.xiaogege.top:8000" 
+PARENT_HOST = "xiaogege.top:8000"
 
 TEMPLATES = [
     {
@@ -116,9 +116,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
