@@ -25,7 +25,7 @@ SECRET_KEY = 'kd+(nl$9k)(=utua3frv*d@qyf@*8ki6*xe=lcb&r$@(6sugxc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['url.xiaogege.top',]
+ALLOWED_HOSTS = ['url.xiaogege.top','0.0.0.0']
 
 
 # Application definition
@@ -129,6 +129,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 STATIC_URL = '/static/'
 
